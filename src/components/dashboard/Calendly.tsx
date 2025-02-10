@@ -1,6 +1,6 @@
 import React from 'react'
 import { InlineWidget } from "react-calendly";
-const Clendly = () => {
+const Calendly = () => {
     return (
         <div>
             <div className="App lg:!h-[800px] h-[900px]">
@@ -10,4 +10,4 @@ const Clendly = () => {
     )
 }
 
-export default Clendly
+export default Calendly

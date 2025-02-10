@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 // import UploadImage from "./UploadImage";
 import { DASHBOARD_BUTTON_LIST } from "@/utils/helper";
-import Clendly from "./Clendly";
+import Calendly from "./Calendly";
 import QuestionOne from "./QuestionOne";
 
 const Dashboard = () => {
@@ -50,7 +50,7 @@ const Dashboard = () => {
                 {page === "button-1" ? (
                     <QuestionOne />
                 ) : page === "button-2" ? (
-                    <Clendly />
+                    <Calendly />
                 ) : page === "button-3" ? (
                     // <UploadImage />
                     <p>Third page</p>

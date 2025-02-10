@@ -6,7 +6,7 @@ const QuestionOne = () => {
             data: [
                 {
                     title: "What is the capital of India?",
-                    options: ["New Delhi", "Mumbai", "Kolkata", "Chennai"],
+                    options: ["New Delhi", "Mumbai", "Kolkata", "Chennai"]
                 }
             ]
         }
@@ -19,4 +19,4 @@ const QuestionOne = () => {
     )
 }
 
-export default QuestionOne
+export default QuestionOne;

@@ -39,11 +39,11 @@ const Dashboard = () => {
                         <Link href={`/dashboard?page=${item.toLowerCase().replace(" ", "-")}`} key={index} onClick={() => setOpen(false)} className={`${page === item.toLowerCase().replace(" ", "-") && "bg-white text-black"} py-2 px-3 rounded-lg cursor-pointer hover:bg-white/50 transition-all duration-300 hover:text-black`}>{item}</Link>
                     ))}
                 </div>
-                <button onClick={handleLogout} className="bg-white py-2 px-3 rounded-lg text-white">Logout
+                <button onClick={handleLogout} className="bg-white py-2 px-3 rounded-lg text-black">Logout
                 </button>
             </div>
             <div className="w-full pt-20">
-                <div className={`${open === true ? "bg-transparent" : ""} bg-yellow-500 max-md:flex max-md:items-center max-md:gap-5 min-h-20 py-5 px-3 w-full z-20 fixed top-0`}>
+                <div className={`${open === true ? "!bg-transparent" : ""} bg-blue-500 max-md:flex max-md:items-center max-md:gap-5 min-h-20 py-5 px-3 w-full z-20 fixed top-0`}>
                     <button onClick={handleOpen} className="md:hidden max-md:size-6 relative max-md:flex max-md:justify-between max-md:flex-col overflow-hidden">
                         <span className={`flex w-6 h-0.5 transition-all duration-300 bg-white ${open === true ? "translate-x-10" : ""}`}></span>
                         <span className={`flex w-6 h-0.5 transition-all duration-300 relative bg-white after:absolute after:w-full after:h-full after:bg-white after:left-0 after:top-0 after:transition-all after:duration-300 ${open === true ? "rotate-45 after:rotate-90" : ""}`}></span>

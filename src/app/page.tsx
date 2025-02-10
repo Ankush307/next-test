@@ -1,12 +1,8 @@
-import Form from "@/components/Form";
-import ImplementQuestion from "@/components/ImplementQuestion";
-import UploadImage from "@/components/UploadImage";
+import Form from "@/components/home/Form";
 export default function Home() {
   return (
     <>
       <Form />
-      <UploadImage/>
-      <ImplementQuestion />
     </>
   );
 }

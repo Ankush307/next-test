@@ -1,7 +1,6 @@
 import React from 'react'
 
-const ImplementQuestion = () => {
-
+const QuestionOne = () => {
     const Question = [{
         list: {
             data: [
@@ -12,12 +11,12 @@ const ImplementQuestion = () => {
             ]
         }
     }];
-
     return (
         <div>
-            <p className='text-center'>{Question[0].list.data[0].title} {Question[0].list.data[0].options[0]} </p>
+            <p>{Question[0].list.data[0].title}</p>
+            <p>{Question[0].list.data[0].options[0]}</p>
         </div>
     )
 }
 
-export default ImplementQuestion
+export default QuestionOne

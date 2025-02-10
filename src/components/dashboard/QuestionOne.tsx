@@ -11,10 +11,14 @@ const QuestionOne = () => {
             ]
         }
     }];
+
+   const title = Question[0].list.data[0].title
+   const options = Question[0].list.data[0].options[0]
+
     return (
         <div>
-            <p>{Question[0].list.data[0].title}</p>
-            <p>{Question[0].list.data[0].options[0]}</p>
+            <p className='text-xl font-semibold'>Q1. {title}</p>
+            <p className='text-lg font-medium'>Ans. {options}</p>
         </div>
     )
 }

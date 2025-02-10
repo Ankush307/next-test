@@ -51,9 +51,9 @@ const Form = () => {
   return (
     <div className="py-[30px] max-lg:pt-8">
       <div className="max-w-[1597px] mx-auto lg:px-[27px] max-lg:px-[35px]">
-        <div className="flex justify-end lg:gap-[120px] flex-wrap max-lg:justify-center">
+        <div className="flex justify-end lg:gap-[120px] max-xl:flex-wrap max-2xl:justify-center">
           <div className="lg:pt-5">
-            <Image src="/assets/images/page-logo.webp" alt="page-logo" width={163} height={61.71} className="pointer-events-none pb-[138.9px] max-md:pb-[90px]" />
+            <Image src="/assets/images/page-logo.webp" alt="page-logo" width={163} height={61.71} className="  pb-[138.9px] max-md:pb-[90px]" />
             <form onSubmit={handleSubmit} className="max-w-[456px]">
               <h2 className="font-semibold text-3xl leading-[58.45px] text-custom-black"> Welcome Back</h2>
               <p className="text-sm leading-[30px] text-custom-gray pb-[31px]"> Welcome back! Please enter your details.</p>
@@ -82,7 +82,7 @@ const Form = () => {
               </p>
             </form>
           </div>
-          <Image src="/assets/images/form-img.webp" alt="" width={759} height={899} className="pointer-events-none max-lg:pt-[98px]" />
+          <Image src="/assets/images/form-img.webp" alt="" width={759} height={899} className="pointer-events-none max-xl:hidden max-lg:pt-[98px]" />
         </div>
       </div>
     </div>

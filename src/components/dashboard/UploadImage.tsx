@@ -11,10 +11,6 @@ const UploadImage = () => {
         setImage([...image, url] as any);
     };
 
-    const deleteImage = () => {
-        setImage([]);
-    };
-
     return (
         <div className="p-10 shadow-2xl w-full mx-auto my-10 container max-w-[1100px]">
             <div className="flex items-center justify-center flex-col">
@@ -33,7 +29,7 @@ const UploadImage = () => {
                 {image.length === 0 ? (
                     <p>No data found</p>
                 ) : (
-                    <button onClick={deleteImage} className="bg-red-500 py-[10px] px-[20px] rounded text-white cursor-pointer"> Delete</button>
+                    <button onClick={() => setImage([])} className="bg-red-500 py-[10px] px-[20px] rounded text-white cursor-pointer"> Delete</button>
                 )}
             </div>
         </div>

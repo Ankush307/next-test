@@ -44,11 +44,11 @@ const Dashboard = () => {
                     <button onClick={handleLogout} className="bg-white py-2 px-3 rounded-lg text-black font-medium">Log out</button>
                 </div>
                 <div className="w-full pt-24 px-6">
-                    {page === "button-1" ? (
+                    {page === "question-1" ? (
                         <QuestionOne />
-                    ) : page === "button-2" ? (
+                    ) : page === "question-2" ? (
                         <Calendly />
-                    ) : page === "button-3" ? (
+                    ) : page === "question-3" ? (
                         <UploadImage />
                     ) : null}
                 </div>

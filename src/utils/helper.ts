@@ -1,1 +1,1 @@
-export const DASHBOARD_BUTTON_LIST = ["Button 1", "Button 2", "Button 3"];
+export const DASHBOARD_BUTTON_LIST = ["Question 1", "Question 2", "Question 3"];

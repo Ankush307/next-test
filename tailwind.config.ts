@@ -8,8 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
       colors: {
-        "custom-black":"#2E2F37",
+        "custom-black": "#2E2F37",
+        "deep-black": "#14191C",
         "gray": "#656566",
         "off-white": "#D0D5DD",
         "custom-blue": "#007BFF",

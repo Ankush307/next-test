@@ -59,26 +59,24 @@ const Form = () => {
               <p className="text-sm leading-[30px] text-custom-gray pb-[31px]"> Welcome back! Please enter your details.</p>
               <div className="pb-[18px]">
                 <label htmlFor="email" className="font-medium leading-5 pb-[6px] block text-deep-black"> Email</label>
-                <input type="email" id="email" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} className="px-[14px] py-[19.2px] outline-none w-[456px] text-light-gray rounded-lg border border-custom-white max-md:w-[320px] shadow-[0_1px_2px_0_#1018280D]" />
+                <input type="email" id="email" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} className="px-[14px] py-[19.2px] outline-none w-[456px] text-gray placeholder:text-gray rounded-lg border border-off-white max-md:w-[320px] shadow-[0_1px_2px_0_#1018280D]" />
               </div>
               <div>
                 <label htmlFor="password" className="font-medium leading-5 pb-[6px] block text-deep-black"> Password</label>
-                <input type="password" id="password" value={password} placeholder="••••••••" onChange={(e) => setPassword(e.target.value)} className="px-[14px] py-[19.2px] outline-none w-[456px] text-light-gray rounded-lg border border-custom-white max-md:w-[320px] shadow-[0_1px_2px_0_#1018280D]" />
+                <input type="password" id="password" value={password} placeholder="••••••••" onChange={(e) => setPassword(e.target.value)} className="px-[14px] py-[19.2px] outline-none w-[456px] text-gray placeholder:text-gray rounded-lg border border-off-white max-md:w-[320px] shadow-[0_1px_2px_0_#1018280D]" />
               </div>
               <div className="flex md:items-center justify-between pt-[18px] max-md:flex-col max-md:gap-[14px]">
                 <label htmlFor="remember" className="inline-flex items-center gap-3">
-                  <input type="checkbox" id="remember" checked={remember} onChange={(e) => setRemember(e.target.checked)} className="!size-5 !bg-white !rounded-md !border !border-solid !border-custom-white" />
-                  <span className="inter leading-6 text-very-light-gray"> Remember for 30 days</span>
+                  <input type="checkbox" id="remember" checked={remember} onChange={(e) => setRemember(e.target.checked)} className="!size-5 !bg-white !rounded-md !border !border-solid !border-off-white" />
+                  <span className="font-inter leading-6 text-custom-slate"> Remember for 30 days</span>
                 </label>
-                <Link href="/" className="text-custom-blue inter leading-6 text-base">
-                  Forgot password
-                </Link>
+                <Link href="/" className="text-custom-blue font-inter leading-6 text-base">Forgot password</Link>
               </div>
               {error && <p className="text-red-500 pt-6">{error}</p>}
-              <button type="submit" className="pt-[9px] pb-[10px] bg-custom-black text-white w-full mt-6 hover:bg-custom-blue transition-all duration-300 rounded-[9px]"> Sign In</button>
-              <button className="pt-[11px] pb-3 bg-white w-full mt-[6px] rounded-[9px] border border-custom-white flex items-center gap-[10px] justify-center"><GoogleIcon /><p>Sign in with Google</p></button>
-              <p className="inter leading-6 text-base md:text-center pt-[18px] text-very-light-gray">Don’t have an account? {''}
-                <Link href="/" className="text-custom-blue">Sign up</Link>
+              <button type="submit" className="pt-[9px] font-medium pb-[10px] bg-custom-black border border-transparent hover:border-off-white  text-white w-full mt-6 hover:bg-white hover:text-black  transition-all duration-300 rounded-[9px]"> Sign In</button>
+              <button className="pt-2 pb-[9px] bg-white w-full mt-[6px] rounded-[9px] border border-off-white flex items-center gap-[10px] justify-center hover:bg-custom-black hover:border-transparent hover:text-white transition-all duration-300 font-medium"><GoogleIcon /><p>Sign in with Google</p></button>
+              <p className="font-inter leading-6 text-base md:text-center pt-[18px] text-custom-slate">Don’t have an account? {''}
+                <Link href="/" className="text-custom-blue font-inter">Sign up</Link>
               </p>
             </form>
           </div>

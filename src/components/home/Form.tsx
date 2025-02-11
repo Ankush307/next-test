@@ -1,9 +1,9 @@
 "use client";
-import { GoogleIcon } from "@/utils/icons";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { GoogleIcon } from "@/utils/icons";
 
 const Form = () => {
   const router = useRouter();

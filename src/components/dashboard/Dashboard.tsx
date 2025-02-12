@@ -50,7 +50,7 @@ const Dashboard = () => {
                         <Calendly />
                     ) : page === "question-3" ? (
                         <UploadImage />
-                    ) : null}
+                    ) : "Select any option"}
                 </div>
             </div>
         </div>

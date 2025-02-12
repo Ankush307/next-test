@@ -2,13 +2,16 @@
 import React, { useState } from "react";
 
 const UploadImage = () => {
-    const [image, setImage] = useState([]);
-    const [_, setUrl] = useState(null);
+    const [image, setImage] = useState<string[]>([]);
 
     const uploadImage = (e: any) => {
-        const url = URL.createObjectURL(e.target.files[0]);
-        setUrl(url as any);
-        setImage([...image, url] as any);
+        const file = e.target.files[0];
+        if (file && file.type.startsWith("image/")) {
+            const url = URL.createObjectURL(file);
+            setImage([...image, url]);
+        } else {
+            alert("Please upload a valid image file.");
+        }
     };
 
     return (
@@ -29,7 +32,7 @@ const UploadImage = () => {
                 {image.length === 0 ? (
                     <p>No data found</p>
                 ) : (
-                    <button onClick={() => setImage([])} className="bg-red-500 py-[10px] px-[20px] rounded text-white cursor-pointer"> Delete</button>
+                    <button onClick={() => setImage([])} className="bg-red-500 py-[10px] px-[20px] rounded text-white cursor-pointer"> Delete All</button>
                 )}
             </div>
         </div>

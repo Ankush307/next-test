@@ -46,7 +46,7 @@ const Form = () => {
   return (
     <div className="py-[30px] max-lg:pt-8 max-lg:pb-[96px] min-h-max">
       <div className="max-w-[1597px] mx-auto lg:px-[27px] max-lg:px-[35px]">
-        <div className="flex justify-end lg:gap-[120px] flex-wrap max-2xl:justify-center ">
+        <div className="flex justify-end lg:gap-[120px] max-lg:flex-wrap max-2xl:justify-center ">
           <div className="lg:pt-5">
             <Image src="/assets/images/page-logo.webp" alt="page-logo" width={163} height={61.71} className="pointer-events-none pb-[138.9px] max-md:pb-[90px]" />
             <h2 className="font-semibold text-3xl leading-[58.45px] text-custom-black"> Welcome Back</h2>
@@ -76,7 +76,7 @@ const Form = () => {
                 <label htmlFor="remember" className="inline-flex items-center gap-3" >
                   <input type="checkbox" id="remember" checked={formData.checkbox} onChange={(e) => setFormData({ ...formData, checkbox: e.target.checked })}
                     className="!size-5 !bg-white !rounded-md !border !border-solid !border-off-white" />
-                  <span className="inter leading-6 text-custom-slate">
+                  <span className="inter leading-6 text-custom-slate cursor-pointer">
                     Remember for 30 days
                   </span>
                 </label>

@@ -45,7 +45,7 @@ const Dashboard = () => {
                     <div className="flex flex-col gap-2 relative">
                         <h1 className="mb-3 text-center text-4xl font-semibold">Dashboard</h1>
                         {DASHBOARD_BUTTON_LIST.map((item, index) => (
-                            <Link href={`/dashboard/${item.toLowerCase().replace(" ", "-")}`} key={index} onClick={() => setOpen(false)} className={`${button === item.toLowerCase().replace(" ", "-") && "bg-indigo-500 text-white"} py-2 px-3 rounded-lg bg-white text-black font-medium cursor-pointer transition-all duration-300 hover:text-black`}>{item}</Link>))}
+                            <Link href={`/dashboard/${item.toLowerCase().replace(" ", "-")}`} key={index} onClick={() => setOpen(false)} className={`${button === item.toLowerCase().replace(" ", "-") && "!bg-indigo-500 text-white"} py-2 px-3 rounded-lg bg-white text-black font-medium cursor-pointer transition-all duration-300`}>{item}</Link>))}
                     </div>
                     <button onClick={handleLogout} className="bg-white text-black py-2 px-3 rounded-lg font-semibold">Log out</button>
                 </div>
